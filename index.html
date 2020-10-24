@@ -1,0 +1,21 @@
+<html>
+<head>
+    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script></script>
+</head>
+<body>
+    <form id="myForm">
+        <label>Form ID: </label><input type="text" id="formId" name="formId" required><br>
+        <label>Collect GA Client ID</label><input id="gaClientId" name="gaClientId" type="checkbox" onchange="yesnoGACheck(this)" ><br>
+        <div id="gaYes" style="display: none;"> <label>GA Portal ID: </label><input type="text" id="gaPortalId"></div></div>
+        <label >Use 'Email' Query Parameter</label><input type="checkbox" onchange="yesnoQueryCheck(this);" id="isQuery"><br>
+        <div id="queryYes" style="display: none;">
+        <label>Redirect URL: </label><input type="text" id="redirectURL" name="redirectURL"></div>
+        <button type="button" onclick="getValues();" >Submit</button>
+        </form>
+<pre id="pre" width=100%></pre>
+<div id="myDiv"></div>
+<script src="https://gistcdn.githack.com/AvivJolt/c78d2525bff5300ede9a2f2857185f6a/raw/733fc1cfa7f3b6331bf5c97b41e448bda4900eb0/js.js" defer></script>
+</body>
+</html>
